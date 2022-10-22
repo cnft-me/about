@@ -6,7 +6,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Sphinx documentation
-docs/build/
+docs/
 
 # Environments
 .idea

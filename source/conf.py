@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'CNFT.me: All Secrets Known'
+project = 'CNFT.me: How It Works'
 copyright = '2022, Allan Hart'
 author = 'Allan Hart'
 release = '0.1'

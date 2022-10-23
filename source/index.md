@@ -7,7 +7,7 @@ myst:
 
 <!-- vale Google.Headings = NO -->
 
-# Awesome Sphinx Theme
+# CNFT.me: All Secrets Revealed
 
 <!-- vale Google.Headings = YES -->
 
@@ -54,6 +54,8 @@ Create functional and beautiful websites for your documentation with Sphinx.
 
 In the _How-to_ section, you can learn more about using and customizing the theme.
 
+
+
 ```{toctree}
 ---
 maxdepth: 1
@@ -64,7 +66,6 @@ how-to/install
 how-to/use
 how-to/customize
 how-to/modify
-how-to/update
 ```
 
 ```{toctree}
@@ -76,8 +77,3 @@ glob: true
 
 demo/*
 ```
-
-## Give feedback
-
-Is something not working or do you miss a feature?
-Create a [GitHub issue](https://github.com/kai687/sphinxawesome-theme/issues/new).

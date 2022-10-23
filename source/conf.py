@@ -17,9 +17,9 @@ sys.path.append(str(ext_dir.absolute()))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CNFT.me: How It Works'
-copyright = '2022, Allan Hart'
 author = 'Allan Hart'
-release = '0.1'
+copyright = f"{author}, 2022."
+
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -80,16 +80,17 @@ linkcheck_ignore = [
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_title = project
 html_theme = 'sphinxawesome_theme'
-
-html_static_path = ['_static']
+html_baseurl = "https://about.cnft.me/"
 html_collapsible_definitions = True
 html_copy_source = False  # Don't need sources
 html_domain_indices = False  # Don't need module indices
+html_extra_path = ["robots.txt"]
 html_favicon = "assets/favicon-32x32.png"
 html_logo = "assets/cnft-me-logo.svg"
+html_static_path = ['_static']
 html_use_index = False  # Don't create index
-
 html_permalinks_icon = (
     '<svg xmlns="http://www.w3.org/2000/svg" '
     'viewBox="0 0 24 24">'
@@ -103,12 +104,12 @@ html_permalinks_icon = (
 
 html_theme_options = {
     'show_prev_next': True,
-    "show_scrolltop": False,
+    "show_scrolltop": True,
     "extra_header_links": {
         "Docs": "/index",
         "About": "/about",
         "repository on GitHub": {
-            "link": "https://github.com/kai687/sphinxawesome-theme",
+            "link": "https://github.com/cnft-me/about",
             "icon": (
                 '<svg style="height: 26px; margin-top: -2px;" viewBox="0 0 45 44" '
                 'fill="currentColor" xmlns="http://www.w3.org/2000/svg">'

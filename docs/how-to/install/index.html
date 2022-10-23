@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="Docutils 0.19: https://docutils.sourceforge.io/" name="generator"/>
+<meta content="Learn how to install the Awesome Theme for your documentation project. " name="description"/>
+<title>Install the theme | CNFT.me: How It Works</title>
+<link href="../../_static/pygments.css" rel="stylesheet"/>
+<link href="../../_static/theme.9297a650d9dd3016d913.css" rel="stylesheet"/>
+<link href="https://about.cnft.me/how-to/install/" rel="canonical"/>
+<link href="../../_static/favicon-32x32.png" rel="shortcut icon"/>
+<link href="../../search/" rel="search" title="Search"/>
+<link href="../use/" rel="next" title="Use the theme"/>
+<link href="../../" rel="prev" title="CNFT.me: All Secrets Revealed"/>
+</head>
+<body class="antialiased text-gray scroll-smooth">
+<div class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto" data-action="keydown@window-&gt;search#focus scroll@window-&gt;scroll#showButton" data-controller="sidebar search scroll" id="page">
+<a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#install-the-theme" title="Skip navigation links">Skip to content</a>
+<header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
+<div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
+<button class="xl:hidden h-14 w-14 leading-14 text-gray-100 hover:bg-gray-700 hover:text-brand focus:outline-none focus:bg-gray-700 focus:text-brand" data-action="sidebar#open" data-sidebar-target="hamburger">
+<span class="sr-only">Open navigation menu</span>
+<svg aria-hidden="true" class="fill-current h-8 w-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</button><a class="hover:bg-gray-700 focus:bg-gray-700 focus:outline-none" href="../../" title="Back to homepage"><img alt="Logo" class="h-14 w-14 p-3 inline-block" src="../../_static/cnft-me-logo.svg"/><span class="hidden lg:inline-block shrink-0 font-medium text-gray-100 mx-5 leading-14 tracking-wider">CNFT.me: How It Works</span>
+</a></div><div class="flex justify-end items-center flex-1"><form action="../../search/" class="flex print:hidden justify-between items-center leading-14 md:ml-4 bg-gray-dark text-gray-300 focus-within:bg-gray-50 focus-within:text-gray-800 focus-within:absolute focus-within:inset-x-0 focus-within:top-0 md:focus-within:w-full md:focus-within:static z-10" data-action="click-&gt;search#focusSearchInput" id="searchbox" method="get">
+<button aria-label="Get search results" class="text-inherit h-14 w-14" tabindex="-1">
+<svg aria-hidden="true" class="fill-current stroke-current h-8 w-8" stroke-width="0.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</button>
+<input aria-label="Search the docs" class="pr-2 bg-transparent text-inherit focus:outline-none w-0 md:w-auto focus:w-full transition-all duration-100" data-search-target="searchInput" id="search-input" name="q" placeholder="Search the docs" type="search"/>
+</form><div class="shrink-0">
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/">Docs</a>
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/about/">About</a>
+<a aria-label="Visit repository on GitHub" class="tooltipped tooltipped-sw h-14 inline-block text-gray-100 leading-14 hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand pl-2 pr-4 sm:px-4" href="https://github.com/cnft-me/about"><svg fill="currentColor" style="height: 26px; margin-top: -2px;" viewbox="0 0 45 44" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.477.927C10.485.927.76 10.65.76 22.647c0 9.596 6.223 17.736 14.853 20.608 1.087.2 1.483-.47 1.483-1.047 0-.516-.019-1.881-.03-3.693-6.04 1.312-7.315-2.912-7.315-2.912-.988-2.51-2.412-3.178-2.412-3.178-1.972-1.346.149-1.32.149-1.32 2.18.154 3.327 2.24 3.327 2.24 1.937 3.318 5.084 2.36 6.321 1.803.197-1.403.759-2.36 1.379-2.903-4.823-.548-9.894-2.412-9.894-10.734 0-2.37.847-4.31 2.236-5.828-.224-.55-.969-2.759.214-5.748 0 0 1.822-.584 5.972 2.226 1.732-.482 3.59-.722 5.437-.732 1.845.01 3.703.25 5.437.732 4.147-2.81 5.967-2.226 5.967-2.226 1.185 2.99.44 5.198.217 5.748 1.392 1.517 2.232 3.457 2.232 5.828 0 8.344-5.078 10.18-9.916 10.717.779.67 1.474 1.996 1.474 4.021 0 2.904-.027 5.247-.027 5.96 0 .58.392 1.256 1.493 1.044C37.981 40.375 44.2 32.24 44.2 22.647c0-11.996-9.726-21.72-21.722-21.72" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+</div></div>
+</div>
+</header>
+<aside class="grid-area-sidebar h-full fixed pt-14 xl:relative inset-y-0 left-0 z-20 xl:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 xl:translate-x-0 xl:opacity-100" data-sidebar-target="sidebar">
+<nav class="h-full overflow-y-auto bg-white text-gray-600 pt-8 flex flex-col" role="navigation">
+<div class="nav-toc flex-1 pl-6"><p class="caption" role="heading"><span class="caption-text">How-To</span></p>
+<ul class="current">
+<li class="toctree-l1 current expanded"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="current reference internal" data-action="click-&gt;sidebar#close" href="#">Install the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#install-the-theme-as-a-python-package-recommended">Install the theme as a Python package (recommended)</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#install-the-theme-from-a-local-directory">Install the theme from a local directory</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="#set-up-a-development-environment">Set up a development environment</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#create-a-local-copy-of-the-repository">Create a local copy of the repository</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#install-python-dependencies">Install Python dependencies</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#install-javascript-dependencies">Install JavaScript dependencies</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../use/">Use the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../load/">Load the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../load/#load-the-theme-from-a-python-package">Load the theme from a Python package</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../load/#load-the-theme-from-a-local-directory">Load the theme from a local directory</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../options/">Configure the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../options/#theme-options">Theme options</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../options/#extension-options">Extension options</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../using/">Make your documentation awesome</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../using/#use-headerlink-icons">Use headerlink icons</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../using/#highlight-placeholder-text-in-code-blocks">Highlight placeholder text in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../using/#highlight-code-changes">Highlight code changes</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../using/#add-as-you-type-search-with-algolia-docsearch">Add as-you-type search with Algolia DocSearch</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/">Customize the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/#add-or-override-styles">Add or override styles</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/#override-css-custom-properties">Override CSS custom properties</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/#add-additional-page-layouts">Add additional page layouts</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/#override-page-layouts-globally">Override page layouts globally</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../customize/#override-per-page-layout">Override per-page layout</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../modify/">Modify the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../modify/#modify-the-templates">Modify the templates</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../modify/#modify-css-files">Modify CSS files</a></div></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Demo</span></p>
+<ul>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/">Module documentation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#automodule-example">Automodule example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#package-structure">Package Structure</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.ApplicationError"><code class="docutils literal notranslate">ApplicationError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.Component"><code class="docutils literal notranslate">Component</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.DataError"><code class="docutils literal notranslate">DataError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.SettingsSpec"><code class="docutils literal notranslate">SettingsSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.TransformSpec"><code class="docutils literal notranslate">TransformSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.VersionInfo"><code class="docutils literal notranslate">VersionInfo</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#autoclass-example">Autoclass example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.nodes.Node"><code class="docutils literal notranslate">Node</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#autofunction-example">Autofunction example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.nodes.serial_escape"><code class="docutils literal notranslate">serial_escape()</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#command-line-options">Command line options</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#option-directive">Option directive</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#option-lists">Option lists</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/">Code blocks</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#sphinx-code-block-directive">Sphinx code-block directive</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#add-captions-to-code-blocks">Add captions to code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#show-line-numbers-in-code-blocks">Show line numbers in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#highlight-lines-in-code-blocks">Highlight lines in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#highlight-changes-in-code-blocks">Highlight changes in code blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#docutils-code-directive">Docutils code directive</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#parsed-literal-blocks">Parsed literal blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/">On-page navigation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#section-1">Section 1</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-1-1">Subsection 1.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-1-2">Subsection 1.2</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#section-2">Section 2</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-2-1">Subsection 2.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-2-2">Subsection 2.2</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/">Figures and tables</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#images">Images</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#figures">Figures</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#tables">Tables</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/footnotes/">Footnotes</a></div></li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/">Inline code</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#syntax-highlighting-in-inline-code">Syntax highlighting in inline code</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#more-interpreted-text-roles">More interpreted text roles</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#files-and-directories">Files and directories</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#inline-code-with-placeholder-text">Inline code with placeholder text</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#keyboard-input">Keyboard input</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#user-interface-elements">User interface elements</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/">Lists</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#unordered-lists">Unordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#ordered-lists">Ordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#definition-lists">Definition lists</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/">Notes, warnings, and quotations</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#tips">Tips</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#notes">Notes</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#cautions">Cautions</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#warnings">Warnings</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#block-quotations">Block quotations</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/">Headings and text</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#inline-markup">Inline markup</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#level-2-heading">Level 2 heading</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#level-3-heading">Level 3 heading</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<button class="text-4xl text-gray-800 p-4 bottom-0 hover:text-brand xl:hidden focus:text-brand self-center" data-action="sidebar#close" title="Close navigation menu">
+<span class="sr-only">Close navigation menu</span>
+<svg aria-hidden="true" class="fill-current stroke-current h-6 w-6" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</aside>
+<main class="px-4 pt-14 xl:ml-fluid grid-area-main overflow-y-auto flex flex-col flex-1 h-full mx-0 md:mx-auto xl:mr-0" data-action="scroll-&gt;scroll#showButton" data-scroll-target="main"><nav aria-label="breadcrumbs" class="print:hidden mt-12 text-sm text-gray-light" role="navigation">
+<a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="../../">CNFT.me: How It Works</a>
+<span class="mr-1">/</span><span aria-current="page">Install the theme</span>
+</nav>
+<article class="flex-1" role="main">
+<section id="install-the-theme">
+<span id="sec-install"></span><h1>Install the theme<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#install-the-theme"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h1>
+<p class="lead">Install the Awesome Theme as a Python package,
+copy it into a local directory,
+or install a full development environment.</p>
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On this page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#install-the-theme-as-a-python-package-recommended" id="id1">Install the theme as a Python package (recommended)</a></p></li>
+<li><p><a class="reference internal" href="#install-the-theme-from-a-local-directory" id="id2">Install the theme from a local directory</a></p></li>
+<li><p><a class="reference internal" href="#set-up-a-development-environment" id="id3">Set up a development environment</a></p>
+<ul>
+<li><p><a class="reference internal" href="#create-a-local-copy-of-the-repository" id="id4">Create a local copy of the repository</a></p></li>
+<li><p><a class="reference internal" href="#install-python-dependencies" id="id5">Install Python dependencies</a></p>
+<ul>
+<li><p><a class="reference internal" href="#using-the-same-versions-of-the-python-packages" id="id6">Using the same versions of the Python packages</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#install-javascript-dependencies" id="id7">Install JavaScript dependencies</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="install-the-theme-as-a-python-package-recommended">
+<span id="sec-install-python-package"></span><h2>Install the theme as a Python package (recommended)<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#install-the-theme-as-a-python-package-recommended"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>Install the latest <strong>released version</strong> from the Python Package Index
+<a class="reference external" href="https://pypi.org/project/sphinxawesome-theme/" rel="nofollow noopener">PyPI<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pip install sphinxawesome-theme</span>
+</code></pre></div></div>
+<p>To install the latest <strong>development version</strong>, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pip install git+https://github.com/kai687/sphinxawesome-theme.git</span>
+</code></pre></div></div>
+<p>See the <a class="reference external" href="https://github.com/kai687/sphinxawesome-theme/blob/master/CHANGELOG.md" rel="nofollow noopener">CHANGELOG<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> file for extra features and updates in the
+development version that aren’t released yet.</p>
+<p>If you want to add styles or extra templates,
+see <a class="reference internal" href="../customize/#sec-customize"><span class="std std-ref">customize the theme</span></a>.</p>
+</section>
+<section id="install-the-theme-from-a-local-directory">
+<h2>Install the theme from a local directory<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#install-the-theme-from-a-local-directory"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>If you want to modify the theme,
+you can clone the repository and install the cloned version
+as a <a class="reference external" href="https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-from-a-local-src-tree" rel="nofollow noopener">local Python package<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>.</p>
+<ol class="arabic">
+<li><p><a class="reference internal" href="#sec-fork-and-clone"><span class="std std-ref">Create a local copy of the repository</span></a>.</p></li>
+<li><p>Install the local copy of the theme in your project:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pip install --editable <var>/path/to/sphinxawesome_theme</var></span>
+</code></pre></div></div>
+<p>Replace <code class="samp docutils literal notranslate"><var>/path/to/sphinxawesome_theme</var></code> with the path to your local copy
+of the theme (the directory with the <code class="docutils literal notranslate">pyproject.toml</code> file).
+The <code class="docutils literal notranslate">--editable</code> option installs the package in editable, or development, mode.</p>
+</li>
+</ol>
+</section>
+<section id="set-up-a-development-environment">
+<span id="sec-dev-env"></span><h2>Set up a development environment<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#set-up-a-development-environment"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>The project has both Python and JavaScript dependencies.
+If you want to write documentation or modify the Python extensions,
+<a class="reference internal" href="#sec-install-python-deps"><span class="std std-ref">install the Python dependencies</span></a>.</p>
+<p>If you want to modify the Jinja2 templates, the CSS, or the JavaScript files,
+you also need to <a class="reference internal" href="#sec-install-js-deps"><span class="std std-ref">install the JavaScript dependencies</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because this theme uses <a class="reference external" href="https://tailwindcss.com" rel="nofollow noopener">Tailwind CSS<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> to apply styles,
+you need to <em>build</em> the theme when you make modifications to the styles.
+It’s best to install the JavaScript dependencies,
+even if you just want to edit the HTML templates.</p>
+</div>
+<section id="create-a-local-copy-of-the-repository">
+<span id="sec-fork-and-clone"></span><h3>Create a local copy of the repository<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#create-a-local-copy-of-the-repository"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<ol class="arabic">
+<li><p>Optional: <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" rel="nofollow noopener">fork the repository<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>.</p>
+<p>If you don’t want to merge your changes with the original repository, you can skip
+this step.</p>
+</li>
+<li><p>Clone the repository:</p>
+<ul>
+<li><p>If you forked the repository, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">git clone https://github.com/<var>GITHUB_USERNAME</var>/sphinxawesome-theme.git</span>
+</code></pre></div></div>
+<p>Replace <code class="samp docutils literal notranslate"><var>GITHUB_USERNAME</var></code> with your GitHub username.</p>
+</li>
+<li><p>If you didn’t fork the repository, clone the original repository:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">git clone https://github.com/kai687/sphinxawesome-theme.git</span>
+</code></pre></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" rel="nofollow noopener">Clone a repository from GitHub<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></p>
+</div>
+</section>
+<section id="install-python-dependencies">
+<span id="sec-install-python-deps"></span><h3>Install Python dependencies<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#install-python-dependencies"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>The Awesome Theme uses these Python tools:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-poetry.org/" rel="nofollow noopener">Poetry<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> to manage the Python dependencies and building the package</p></li>
+<li><p><a class="reference external" href="https://nox.thea.codes/en/stable/" rel="nofollow noopener">Nox<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> to test and lint the Python code, as well as to build the docs</p></li>
+<li><p><a class="reference external" href="https://pypa.github.io/pipx/" rel="nofollow noopener">Pipx<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> to install Python applications in isolated environments and making them available globally</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The commands shown in this section install the latest versions of Nox and Poetry.
+See the file <a class="reference external" href="https://github.com/kai687/sphinxawesome-theme/blob/master/.github/workflows/constraints.txt" rel="nofollow noopener">constraints.txt<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>
+for the version numbers of Nox and Poetry used for building the Awesome Theme Python package.</p>
+</div>
+<p>Follow these steps to install the Python dependencies:</p>
+<ol class="arabic">
+<li><p><a class="reference internal" href="#sec-fork-and-clone"><span class="std std-ref">Create a local copy of the repository</span></a></p></li>
+<li><p><a class="reference external" href="https://pypa.github.io/pipx/#install-pipx" rel="nofollow noopener">Install pipx<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pip install --user pipx</span>
+</code></pre></div></div>
+</li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/master/#installing-with-pipx" rel="nofollow noopener">Install Poetry<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pipx install poetry</span>
+</code></pre></div></div>
+</li>
+<li><p><a class="reference external" href="https://github.com/wntrblm/nox/#installation" rel="nofollow noopener">Install Nox<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pipx install nox</span>
+</code></pre></div></div>
+</li>
+<li><p><a class="reference external" href="https://github.com/cjolowicz/nox-poetry/#installation" rel="nofollow noopener">Install nox-poetry<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pipx inject nox nox-poetry</span>
+</code></pre></div></div>
+<p>Nox-poetry is a package for using Poetry and Nox together.
+The <code class="docutils literal notranslate">nox-poetry</code> package must be installed in the same environment as Nox.</p>
+</li>
+<li><p>Install the Python dependencies:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">poetry install</span>
+</code></pre></div></div>
+</li>
+<li><p>Optional: install and test the pre-commit hooks:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">poetry run pre-commit install</span>
+</code></pre></div></div>
+<p>If you don’t plan on committing any changes to the repository, you can skip
+this step. You can see the active pre-commit hooks in the file <a class="reference external" href="https://github.com/kai687/sphinxawesome-theme/blob/master/.pre-commit-config.yaml" rel="nofollow noopener">.pre-commit-config.yaml<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>.</p>
+<p>To test pre-commit with Poetry, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">poetry run pre-commit run --all</span>
+</code></pre></div></div>
+</li>
+<li><p>Test your Nox environment.</p>
+<p>You can run any Nox session to confirm that the environment is working.
+To list the available sessions, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">nox --list-sessions</span>
+</code></pre></div></div>
+<p>For example, run all default sessions:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">nox</span>
+</code></pre></div></div>
+</li>
+</ol>
+<section id="using-the-same-versions-of-the-python-packages">
+<h4>Using the same versions of the Python packages<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#using-the-same-versions-of-the-python-packages"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h4>
+<p>The commands in the preceding section install the latest versions of Poetry, Nox, and pipx.
+If you want to <em>constrain</em> the versions to install, you can use pip’s <a class="reference external" href="https://pip.pypa.io/en/stable/user_guide/#constraints-files" rel="nofollow noopener">constraint file<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>.</p>
+<p>For example, to install a specific version of pipx, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pip install --user --constraint=constraints.txt pipx</span>
+</code></pre></div></div>
+<p>For example, to install a specific version of Nox with pipx, run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">pipx --pip-args=--constraint=constraints.txt nox</span>
+</code></pre></div></div>
+<p>See the file <a class="reference external" href="https://github.com/kai687/sphinxawesome-theme/blob/master/constraints.txt" rel="nofollow noopener">constraints.txt<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> for the version constraints used in the Awesome Theme repository.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In development environments, you might use the latest versions of packages,
+while for reproducible results in continuous integration (CI) pipelines,
+it’s often better to install specific versions of packages.</p>
+</div>
+</section>
+</section>
+<section id="install-javascript-dependencies">
+<span id="sec-install-js-deps"></span><h3>Install JavaScript dependencies<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#install-javascript-dependencies"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<ol class="arabic">
+<li><p>Confirm that <a class="reference external" href="https://nodejs.org/en/" rel="nofollow noopener">Node.js<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a> is installed:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="gp">$ </span>node --version
+<span class="go">v16.16.0</span>
+</code></pre></div></div>
+<p>If the preceding command fails, make sure that you installed Node.js.
+If you installed Node.js, make sure that the path to the <code class="docutils literal notranslate">node</code>
+executable is in your <code class="docutils literal notranslate">PATH</code> environment variable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For installing and managing Node.js versions, see these projects:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/nvm-sh/nvm" rel="nofollow noopener">nvm<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></p></li>
+<li><p><a class="reference external" href="https://volta.sh/" rel="nofollow noopener">Volta<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></p></li>
+<li><p><a class="reference external" href="https://asdf-vm.com/" rel="nofollow noopener">asdf<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></p></li>
+</ul>
+</div>
+</li>
+<li><p>Optional: install <a class="reference external" href="https://yarnpkg.com/" rel="nofollow noopener"><code class="docutils literal notranslate">yarn</code><svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">npm install --global yarn</span>
+</code></pre></div></div>
+<p>If you want to use the same versions of JavaScript packages as in the Awesome Theme
+repository, use the Yarn package manager.</p>
+</li>
+<li><p><a class="reference internal" href="#sec-fork-and-clone"><span class="std std-ref">Create a local copy of the repository</span></a></p></li>
+<li><p>Go to the <code class="docutils literal notranslate">theme-src/</code> directory:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">./sphinxawesome-theme/</span>
+<span class="go">├── src/</span>
+<span class="go">│   ├── sphinxawesome_theme/</span>
+<mark><span class="go">│   └── theme-src/</span>
+</mark><span class="go">├── docs/</span>
+<span class="go">├── tests/</span>
+<span class="go">└── ...</span>
+</code></pre></div></div>
+</li>
+<li><p>Install the JavaScript dependencies:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">yarn install</span>
+</code></pre></div></div>
+</li>
+<li><p>Build the theme:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">terminal</span></div>
+<div class="highlight"><pre><code><span class="go">yarn build</span>
+</code></pre></div></div>
+</li>
+</ol>
+</section>
+</section>
+</section>
+</article><section class="flex justify-between pt-4 mt-12">
+<div class="mr-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2">Previous</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../../" title="Go to previous page">CNFT.me: All Secrets Revealed</a>
+</div>
+<div class="ml-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2 text-right">Next</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../use/" title="Go to next page">Use the theme</a>
+</div>
+</section>
+<footer>
+<div class="mt-20 mb-4 text-sm text-gray-700 print:mt-4">© Allan Hart, 2022. Made with <a href="https://www.sphinx-doc.org">Sphinx 5.3.0</a></div>
+</footer><button aria-label="Scroll to top" class="fixed bottom-0 right-0 p-2 m-4 z-10 rounded-full bg-gray-700 text-white opacity-0 transition-opacity duration-1000 pointer-events-none hover:bg-gray-300 hover:text-link focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-gray-200 focus:text-link tooltipped tooltipped-nw" data-action="scroll#scrollToTop" data-scroll-target="scrollToTop">
+<svg class="fill-current stroke-current h-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+</svg>
+</button></main>
+<button class="fixed bottom-0 right-0 z-20 opacity-0 p-4 m-4 tracking-wide bg-gray-900 text-gray-100 transition transform transform-gpu duration-500 translate-y-full" data-action="search#hideSnackbar" data-search-target="snackbar">
+  Clear highlights
+</button><div class="fixed hidden inset-0 bg-black bg-opacity-50" data-action="click-&gt;sidebar#close" data-sidebar-target="screen">
+</div>
+</div>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/sphinx_highlight.js"></script>
+<script src="../../_static/theme.3051a0ec24cad00d4d88.js"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<title>docutils | CNFT.me: How It Works</title>
+<link href="../../_static/pygments.css" rel="stylesheet"/>
+<link href="../../_static/theme.9297a650d9dd3016d913.css" rel="stylesheet"/>
+<link href="https://about.cnft.me/_modules/docutils/" rel="canonical"/>
+<link href="../../_static/favicon-32x32.png" rel="shortcut icon"/>
+<link href="../../search/" rel="search" title="Search"/>
+</head>
+<body class="antialiased text-gray scroll-smooth">
+<div class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto" data-action="keydown@window-&gt;search#focus scroll@window-&gt;scroll#showButton" data-controller="sidebar search scroll" id="page">
+<a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#docutils" title="Skip navigation links">Skip to content</a>
+<header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
+<div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
+<button class="xl:hidden h-14 w-14 leading-14 text-gray-100 hover:bg-gray-700 hover:text-brand focus:outline-none focus:bg-gray-700 focus:text-brand" data-action="sidebar#open" data-sidebar-target="hamburger">
+<span class="sr-only">Open navigation menu</span>
+<svg aria-hidden="true" class="fill-current h-8 w-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</button><a class="hover:bg-gray-700 focus:bg-gray-700 focus:outline-none" href="../../" title="Back to homepage"><img alt="Logo" class="h-14 w-14 p-3 inline-block" src="../../_static/cnft-me-logo.svg"/><span class="hidden lg:inline-block shrink-0 font-medium text-gray-100 mx-5 leading-14 tracking-wider">CNFT.me: How It Works</span>
+</a></div><div class="flex justify-end items-center flex-1"><form action="../../search/" class="flex print:hidden justify-between items-center leading-14 md:ml-4 bg-gray-dark text-gray-300 focus-within:bg-gray-50 focus-within:text-gray-800 focus-within:absolute focus-within:inset-x-0 focus-within:top-0 md:focus-within:w-full md:focus-within:static z-10" data-action="click-&gt;search#focusSearchInput" id="searchbox" method="get">
+<button aria-label="Get search results" class="text-inherit h-14 w-14" tabindex="-1">
+<svg aria-hidden="true" class="fill-current stroke-current h-8 w-8" stroke-width="0.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</button>
+<input aria-label="Search the docs" class="pr-2 bg-transparent text-inherit focus:outline-none w-0 md:w-auto focus:w-full transition-all duration-100" data-search-target="searchInput" id="search-input" name="q" placeholder="Search the docs" type="search"/>
+</form><div class="shrink-0">
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/">Docs</a>
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/about/">About</a>
+<a aria-label="Visit repository on GitHub" class="tooltipped tooltipped-sw h-14 inline-block text-gray-100 leading-14 hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand pl-2 pr-4 sm:px-4" href="https://github.com/cnft-me/about"><svg fill="currentColor" style="height: 26px; margin-top: -2px;" viewbox="0 0 45 44" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.477.927C10.485.927.76 10.65.76 22.647c0 9.596 6.223 17.736 14.853 20.608 1.087.2 1.483-.47 1.483-1.047 0-.516-.019-1.881-.03-3.693-6.04 1.312-7.315-2.912-7.315-2.912-.988-2.51-2.412-3.178-2.412-3.178-1.972-1.346.149-1.32.149-1.32 2.18.154 3.327 2.24 3.327 2.24 1.937 3.318 5.084 2.36 6.321 1.803.197-1.403.759-2.36 1.379-2.903-4.823-.548-9.894-2.412-9.894-10.734 0-2.37.847-4.31 2.236-5.828-.224-.55-.969-2.759.214-5.748 0 0 1.822-.584 5.972 2.226 1.732-.482 3.59-.722 5.437-.732 1.845.01 3.703.25 5.437.732 4.147-2.81 5.967-2.226 5.967-2.226 1.185 2.99.44 5.198.217 5.748 1.392 1.517 2.232 3.457 2.232 5.828 0 8.344-5.078 10.18-9.916 10.717.779.67 1.474 1.996 1.474 4.021 0 2.904-.027 5.247-.027 5.96 0 .58.392 1.256 1.493 1.044C37.981 40.375 44.2 32.24 44.2 22.647c0-11.996-9.726-21.72-21.722-21.72" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+</div></div>
+</div>
+</header>
+<aside class="grid-area-sidebar h-full fixed pt-14 xl:relative inset-y-0 left-0 z-20 xl:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 xl:translate-x-0 xl:opacity-100" data-sidebar-target="sidebar">
+<nav class="h-full overflow-y-auto bg-white text-gray-600 pt-8 flex flex-col" role="navigation">
+<div class="nav-toc flex-1 pl-6"><p class="caption" role="heading"><span class="caption-text">How-To</span></p>
+<ul>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/">Install the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-as-a-python-package-recommended">Install the theme as a Python package (recommended)</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-from-a-local-directory">Install the theme from a local directory</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#set-up-a-development-environment">Set up a development environment</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#create-a-local-copy-of-the-repository">Create a local copy of the repository</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-python-dependencies">Install Python dependencies</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-javascript-dependencies">Install JavaScript dependencies</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/use/">Use the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/">Load the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-python-package">Load the theme from a Python package</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-local-directory">Load the theme from a local directory</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/">Configure the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#theme-options">Theme options</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#extension-options">Extension options</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/">Become Awesome</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#use-headerlink-icons">Use headerlink icons</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-placeholder-text-in-code-blocks">Highlight placeholder text in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-code-changes">Highlight code changes</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#add-as-you-type-search-with-algolia-docsearch">Add as-you-type search with Algolia DocSearch</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/">Customize the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-or-override-styles">Add or override styles</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-css-custom-properties">Override CSS custom properties</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-additional-page-layouts">Add additional page layouts</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-page-layouts-globally">Override page layouts globally</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-per-page-layout">Override per-page layout</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/">Modify the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-the-templates">Modify the templates</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-css-files">Modify CSS files</a></div></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Demo</span></p>
+<ul>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/">Module documentation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#automodule-example">Automodule example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#package-structure">Package Structure</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.ApplicationError"><code class="docutils literal notranslate">ApplicationError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.Component"><code class="docutils literal notranslate">Component</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.DataError"><code class="docutils literal notranslate">DataError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.SettingsSpec"><code class="docutils literal notranslate">SettingsSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.TransformSpec"><code class="docutils literal notranslate">TransformSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.VersionInfo"><code class="docutils literal notranslate">VersionInfo</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#autoclass-example">Autoclass example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.nodes.Node"><code class="docutils literal notranslate">Node</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#autofunction-example">Autofunction example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#docutils.nodes.serial_escape"><code class="docutils literal notranslate">serial_escape()</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#command-line-options">Command line options</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#option-directive">Option directive</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/auto/#option-lists">Option lists</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/">Code blocks</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#sphinx-code-block-directive">Sphinx code-block directive</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#add-captions-to-code-blocks">Add captions to code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#show-line-numbers-in-code-blocks">Show line numbers in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#highlight-lines-in-code-blocks">Highlight lines in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#highlight-changes-in-code-blocks">Highlight changes in code blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#docutils-code-directive">Docutils code directive</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/code-blocks/#parsed-literal-blocks">Parsed literal blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/">On-page navigation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#section-1">Section 1</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-1-1">Subsection 1.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-1-2">Subsection 1.2</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#section-2">Section 2</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-2-1">Subsection 2.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/contents/#subsection-2-2">Subsection 2.2</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/">Figures and tables</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#images">Images</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#figures">Figures</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/figures/#tables">Tables</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/footnotes/">Footnotes</a></div></li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/">Inline code</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#syntax-highlighting-in-inline-code">Syntax highlighting in inline code</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#more-interpreted-text-roles">More interpreted text roles</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#files-and-directories">Files and directories</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#inline-code-with-placeholder-text">Inline code with placeholder text</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#keyboard-input">Keyboard input</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/inline-code/#user-interface-elements">User interface elements</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/">Lists</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#unordered-lists">Unordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#ordered-lists">Ordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/lists/#definition-lists">Definition lists</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/">Notes, warnings, and quotations</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#tips">Tips</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#notes">Notes</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#cautions">Cautions</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#warnings">Warnings</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/notes/#block-quotations">Block quotations</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/">Headings and text</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#inline-markup">Inline markup</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#level-2-heading">Level 2 heading</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../demo/text/#level-3-heading">Level 3 heading</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<button class="text-4xl text-gray-800 p-4 bottom-0 hover:text-brand xl:hidden focus:text-brand self-center" data-action="sidebar#close" title="Close navigation menu">
+<span class="sr-only">Close navigation menu</span>
+<svg aria-hidden="true" class="fill-current stroke-current h-6 w-6" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</aside>
+<main class="px-4 pt-14 xl:ml-fluid grid-area-main overflow-y-auto flex flex-col flex-1 h-full mx-0 md:mx-auto xl:mr-0" data-action="scroll-&gt;scroll#showButton" data-scroll-target="main"><nav aria-label="breadcrumbs" class="print:hidden mt-12 text-sm text-gray-light" role="navigation">
+<a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="../../">CNFT.me: How It Works</a>
+<span class="mr-1">/</span><a class="text-gray-light text-sm hover:text-gray-dark" href="../">Module code</a>
+<span class="mr-1">/</span><span aria-current="page">docutils</span>
+</nav>
+<article class="flex-1" role="main">
+<h1>Source code for docutils</h1><div class="highlight"><pre>
+<code><span class="c1"># $Id: __init__.py 9103 2022-07-05 20:04:21Z grubert $</span>
+<span class="c1"># Author: David Goodger &lt;goodger@python.org&gt;</span>
+<span class="c1"># Copyright: This module has been placed in the public domain.</span>
+
+<span class="sd">"""</span>
+<span class="sd">This is the Docutils (Python Documentation Utilities) package.</span>
+
+<span class="sd">Package Structure</span>
+<span class="sd">=================</span>
+
+<span class="sd">Modules:</span>
+
+<span class="sd">- __init__.py: Contains component base classes, exception classes, and</span>
+<span class="sd">  Docutils version information.</span>
+
+<span class="sd">- core.py: Contains the ``Publisher`` class and ``publish_*()`` convenience</span>
+<span class="sd">  functions.</span>
+
+<span class="sd">- frontend.py: Runtime settings (command-line interface, configuration files)</span>
+<span class="sd">  processing, for Docutils front-ends.</span>
+
+<span class="sd">- io.py: Provides a uniform API for low-level input and output.</span>
+
+<span class="sd">- nodes.py: Docutils document tree (doctree) node class library.</span>
+
+<span class="sd">- statemachine.py: A finite state machine specialized for</span>
+<span class="sd">  regular-expression-based text filters.</span>
+
+<span class="sd">Subpackages:</span>
+
+<span class="sd">- languages: Language-specific mappings of terms.</span>
+
+<span class="sd">- parsers: Syntax-specific input parser modules or packages.</span>
+
+<span class="sd">- readers: Context-specific input handlers which understand the data</span>
+<span class="sd">  source and manage a parser.</span>
+
+<span class="sd">- transforms: Modules used by readers and writers to modify</span>
+<span class="sd">  the Docutils document tree.</span>
+
+<span class="sd">- utils: Contains the ``Reporter`` system warning class and miscellaneous</span>
+<span class="sd">  utilities used by readers, writers, and transforms.</span>
+
+<span class="sd">  utils/urischemes.py: Contains a complete mapping of known URI addressing</span>
+<span class="sd">  scheme names to descriptions.</span>
+
+<span class="sd">- utils/math: Contains functions for conversion of mathematical notation</span>
+<span class="sd">  between different formats (LaTeX, MathML, text, ...).</span>
+
+<span class="sd">- writers: Format-specific output translators.</span>
+<span class="sd">"""</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+
+<span class="n">__docformat__</span> <span class="o">=</span> <span class="s1">'reStructuredText'</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">'0.19'</span>
+<span class="sd">"""Docutils version identifier (complies with PEP 440)::</span>
+
+<span class="sd">    major.minor[.micro][releaselevel[serial]][.dev]</span>
+
+<span class="sd">For version comparison operations, use `__version_info__` (see, below)</span>
+<span class="sd">rather than parsing the text of `__version__`.</span>
+
+<span class="sd">https://docutils.sourceforge.io/docs/dev/policies.html#version-identification</span>
+<span class="sd">"""</span>
+
+<span class="n">__version_details__</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="sd">"""Optional extra version details (e.g. 'snapshot 2005-05-29, r3410').</span>
+
+<span class="sd">For development and release status, use `__version__ and `__version_info__`.</span>
+<span class="sd">"""</span>
+
+
+<div class="viewcode-block" id="VersionInfo"><a class="viewcode-back" href="../../demo/auto/#docutils.VersionInfo">[docs]</a><span class="k">class</span> <span class="nc">VersionInfo</span><span class="p">(</span><span class="n">namedtuple</span><span class="p">(</span><span class="s1">'VersionInfo'</span><span class="p">,</span>
+                             <span class="s1">'major minor micro releaselevel serial release'</span><span class="p">)):</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">major</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">release</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">releaselevels</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'alpha'</span><span class="p">,</span> <span class="s1">'beta'</span><span class="p">,</span> <span class="s1">'candidate'</span><span class="p">,</span> <span class="s1">'final'</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">releaselevel</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">releaselevels</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'releaselevel must be one of </span><span class="si">%r</span><span class="s1">.'</span>
+                             <span class="o">%</span> <span class="p">(</span><span class="n">releaselevels</span><span class="p">,</span> <span class="p">))</span>
+        <span class="k">if</span> <span class="n">releaselevel</span> <span class="o">==</span> <span class="s1">'final'</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">release</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'releaselevel "final" must not be used '</span>
+                                 <span class="s1">'with development versions (leads to wrong '</span>
+                                 <span class="s1">'version ordering of the related __version__'</span><span class="p">)</span>
+                <span class="c1"># cf. https://peps.python.org/pep-0440/#summary-of-permitted-suffixes-and-relative-ordering  # noqa</span>
+            <span class="k">if</span> <span class="n">serial</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'"serial" must be 0 for final releases'</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">major</span><span class="p">,</span> <span class="n">minor</span><span class="p">,</span> <span class="n">micro</span><span class="p">,</span>
+                               <span class="n">releaselevel</span><span class="p">,</span> <span class="n">serial</span><span class="p">,</span> <span class="n">release</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">other</span> <span class="o">=</span> <span class="n">VersionInfo</span><span class="p">(</span><span class="o">*</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="o">.</span><span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">other</span> <span class="o">=</span> <span class="n">VersionInfo</span><span class="p">(</span><span class="o">*</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="o">.</span><span class="fm">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">other</span> <span class="o">=</span> <span class="n">VersionInfo</span><span class="p">(</span><span class="o">*</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="o">.</span><span class="fm">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">other</span> <span class="o">=</span> <span class="n">VersionInfo</span><span class="p">(</span><span class="o">*</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="o">.</span><span class="fm">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span></div>
+
+
+<span class="n">__version_info__</span> <span class="o">=</span> <span class="n">VersionInfo</span><span class="p">(</span>
+    <span class="n">major</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">minor</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+    <span class="n">micro</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span>  <span class="c1"># one of 'alpha', 'beta', 'candidate', 'final'</span>
+    <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>  <span class="c1"># pre-release number (0 for final releases and snapshots)</span>
+    <span class="n">release</span><span class="o">=</span><span class="kc">True</span>  <span class="c1"># True for official releases and pre-releases</span>
+    <span class="p">)</span>
+<span class="sd">"""Comprehensive version information tuple.</span>
+
+<span class="sd">https://docutils.sourceforge.io/docs/dev/policies.html#version-identification</span>
+<span class="sd">"""</span>
+
+
+<div class="viewcode-block" id="ApplicationError"><a class="viewcode-back" href="../../demo/auto/#docutils.ApplicationError">[docs]</a><span class="k">class</span> <span class="nc">ApplicationError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span> <span class="k">pass</span></div>
+<div class="viewcode-block" id="DataError"><a class="viewcode-back" href="../../demo/auto/#docutils.DataError">[docs]</a><span class="k">class</span> <span class="nc">DataError</span><span class="p">(</span><span class="n">ApplicationError</span><span class="p">):</span> <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="SettingsSpec"><a class="viewcode-back" href="../../demo/auto/#docutils.SettingsSpec">[docs]</a><span class="k">class</span> <span class="nc">SettingsSpec</span><span class="p">:</span>
+
+    <span class="sd">"""</span>
+<span class="sd">    Runtime setting specification base class.</span>
+
+<span class="sd">    SettingsSpec subclass objects used by `docutils.frontend.OptionParser`.</span>
+<span class="sd">    """</span>
+
+    <span class="c1"># TODO: replace settings_specs with a new data structure</span>
+    <span class="c1"># Backwards compatiblity:</span>
+    <span class="c1">#   Drop-in components:</span>
+    <span class="c1">#   Sphinx supplies settings_spec in the current format in some places</span>
+    <span class="c1">#   Myst parser provides a settings_spec tuple</span>
+    <span class="c1">#</span>
+    <span class="c1">#   Sphinx reads a settings_spec in order to set a default value</span>
+    <span class="c1">#   in writers/html.py:59</span>
+    <span class="c1">#   https://github.com/sphinx-doc/sphinx/blob/4.x/sphinx/writers/html.py</span>
+    <span class="c1">#   This should be changed (before retiring the old format)</span>
+    <span class="c1">#   to use `settings_default_overrides` instead.</span>
+    <span class="n">settings_spec</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="sd">"""Runtime settings specification.  Override in subclasses.</span>
+
+<span class="sd">    Defines runtime settings and associated command-line options, as used by</span>
+<span class="sd">    `docutils.frontend.OptionParser`.  This is a tuple of:</span>
+
+<span class="sd">    - Option group title (string or `None` which implies no group, just a list</span>
+<span class="sd">      of single options).</span>
+
+<span class="sd">    - Description (string or `None`).</span>
+
+<span class="sd">    - A sequence of option tuples.  Each consists of:</span>
+
+<span class="sd">      - Help text (string)</span>
+
+<span class="sd">      - List of option strings (e.g. ``['-Q', '--quux']``).</span>
+
+<span class="sd">      - Dictionary of keyword arguments sent to the OptionParser/OptionGroup</span>
+<span class="sd">        ``add_option`` method.</span>
+
+<span class="sd">        Runtime setting names are derived implicitly from long option names</span>
+<span class="sd">        ('--a-setting' becomes ``settings.a_setting``) or explicitly from the</span>
+<span class="sd">        'dest' keyword argument.</span>
+
+<span class="sd">        Most settings will also have a 'validator' keyword &amp; function.  The</span>
+<span class="sd">        validator function validates setting values (from configuration files</span>
+<span class="sd">        and command-line option arguments) and converts them to appropriate</span>
+<span class="sd">        types.  For example, the ``docutils.frontend.validate_boolean``</span>
+<span class="sd">        function, **required by all boolean settings**, converts true values</span>
+<span class="sd">        ('1', 'on', 'yes', and 'true') to 1 and false values ('0', 'off',</span>
+<span class="sd">        'no', 'false', and '') to 0.  Validators need only be set once per</span>
+<span class="sd">        setting.  See the `docutils.frontend.validate_*` functions.</span>
+
+<span class="sd">        See the optparse docs for more details.</span>
+
+<span class="sd">    - More triples of group title, description, options, as many times as</span>
+<span class="sd">      needed.  Thus, `settings_spec` tuples can be simply concatenated.</span>
+<span class="sd">    """</span>
+
+    <span class="n">settings_defaults</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">"""A dictionary of defaults for settings not in `settings_spec` (internal</span>
+<span class="sd">    settings, intended to be inaccessible by command-line and config file).</span>
+<span class="sd">    Override in subclasses."""</span>
+
+    <span class="n">settings_default_overrides</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">"""A dictionary of auxiliary defaults, to override defaults for settings</span>
+<span class="sd">    defined in other components' `setting_specs`.  Override in subclasses."""</span>
+
+    <span class="n">relative_path_settings</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="sd">"""Settings containing filesystem paths.  Override in subclasses.</span>
+<span class="sd">    Settings listed here are to be interpreted relative to the current working</span>
+<span class="sd">    directory."""</span>
+
+    <span class="n">config_section</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">"""The name of the config file section specific to this component</span>
+<span class="sd">    (lowercase, no brackets).  Override in subclasses."""</span>
+
+    <span class="n">config_section_dependencies</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">"""A list of names of config file sections that are to be applied before</span>
+<span class="sd">    `config_section`, in order (from general to specific).  In other words,</span>
+<span class="sd">    the settings in `config_section` are to be overlaid on top of the settings</span>
+<span class="sd">    from these sections.  The "general" section is assumed implicitly.</span>
+<span class="sd">    Override in subclasses."""</span></div>
+
+
+<div class="viewcode-block" id="TransformSpec"><a class="viewcode-back" href="../../demo/auto/#docutils.TransformSpec">[docs]</a><span class="k">class</span> <span class="nc">TransformSpec</span><span class="p">:</span>
+
+    <span class="sd">"""</span>
+<span class="sd">    Runtime transform specification base class.</span>
+
+<span class="sd">    TransformSpec subclass objects used by `docutils.transforms.Transformer`.</span>
+<span class="sd">    """</span>
+
+<div class="viewcode-block" id="TransformSpec.get_transforms"><a class="viewcode-back" href="../../demo/auto/#docutils.TransformSpec.get_transforms">[docs]</a>    <span class="k">def</span> <span class="nf">get_transforms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">"""Transforms required by this class.  Override in subclasses."""</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_transforms</span> <span class="o">!=</span> <span class="p">():</span>
+            <span class="kn">import</span> <span class="nn">warnings</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">'TransformSpec: the "default_transforms" attribute '</span>
+                          <span class="s1">'will be removed in Docutils 2.0.</span><span class="se">\n</span><span class="s1">'</span>
+                          <span class="s1">'Use get_transforms() method instead.'</span><span class="p">,</span>
+                          <span class="ne">DeprecationWarning</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">default_transforms</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[]</span></div>
+
+    <span class="c1"># Deprecated; for compatibility.</span>
+    <span class="n">default_transforms</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="n">unknown_reference_resolvers</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="sd">"""List of functions to try to resolve unknown references.  Unknown</span>
+<span class="sd">    references have a 'refname' attribute which doesn't correspond to any</span>
+<span class="sd">    target in the document.  Called when the transforms in</span>
+<span class="sd">    `docutils.transforms.references` are unable to find a correct target.  The</span>
+<span class="sd">    list should contain functions which will try to resolve unknown</span>
+<span class="sd">    references, with the following signature::</span>
+
+<span class="sd">        def reference_resolver(node):</span>
+<span class="sd">            '''Returns boolean: true if resolved, false if not.'''</span>
+
+<span class="sd">    If the function is able to resolve the reference, it should also remove</span>
+<span class="sd">    the 'refname' attribute and mark the node as resolved::</span>
+
+<span class="sd">        del node['refname']</span>
+<span class="sd">        node.resolved = 1</span>
+
+<span class="sd">    Each function must have a "priority" attribute which will affect the order</span>
+<span class="sd">    the unknown_reference_resolvers are run::</span>
+
+<span class="sd">        reference_resolver.priority = 100</span>
+
+<span class="sd">    Override in subclasses."""</span></div>
+
+
+<div class="viewcode-block" id="Component"><a class="viewcode-back" href="../../demo/auto/#docutils.Component">[docs]</a><span class="k">class</span> <span class="nc">Component</span><span class="p">(</span><span class="n">SettingsSpec</span><span class="p">,</span> <span class="n">TransformSpec</span><span class="p">):</span>
+
+    <span class="sd">"""Base class for Docutils components."""</span>
+
+    <span class="n">component_type</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">"""Name of the component type ('reader', 'parser', 'writer').  Override in</span>
+<span class="sd">    subclasses."""</span>
+
+    <span class="n">supported</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="sd">"""Name and aliases for this component.  Override in subclasses."""</span>
+
+<div class="viewcode-block" id="Component.supports"><a class="viewcode-back" href="../../demo/auto/#docutils.Component.supports">[docs]</a>    <span class="k">def</span> <span class="nf">supports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="p">):</span>
+        <span class="sd">"""</span>
+<span class="sd">        Is `format` supported by this component?</span>
+
+<span class="sd">        To be used by transforms to ask the dependent component if it supports</span>
+<span class="sd">        a certain input context or output format.</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="nb">format</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">supported</span></div></div>
+</code></pre></div>
+</article><section class="flex justify-between pt-4 mt-12">
+</section>
+<footer>
+<div class="mt-20 mb-4 text-sm text-gray-700 print:mt-4">© Allan Hart, 2022. Made with <a href="https://www.sphinx-doc.org">Sphinx 5.3.0</a></div>
+</footer><button aria-label="Scroll to top" class="fixed bottom-0 right-0 p-2 m-4 z-10 rounded-full bg-gray-700 text-white opacity-0 transition-opacity duration-1000 pointer-events-none hover:bg-gray-300 hover:text-link focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-gray-200 focus:text-link tooltipped tooltipped-nw" data-action="scroll#scrollToTop" data-scroll-target="scrollToTop">
+<svg class="fill-current stroke-current h-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+</svg>
+</button></main>
+<button class="fixed bottom-0 right-0 z-20 opacity-0 p-4 m-4 tracking-wide bg-gray-900 text-gray-100 transition transform transform-gpu duration-500 translate-y-full" data-action="search#hideSnackbar" data-search-target="snackbar">
+  Clear highlights
+</button><div class="fixed hidden inset-0 bg-black bg-opacity-50" data-action="click-&gt;sidebar#close" data-sidebar-target="screen">
+</div>
+</div>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/sphinx_highlight.js"></script>
+<script src="../../_static/theme.3051a0ec24cad00d4d88.js"></script>
+</body>
+</html>

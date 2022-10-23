@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="Docutils 0.19: https://docutils.sourceforge.io/" name="generator"/>
+<meta content="See an example for module documentation with the Awesome theme. Sphinx generates module documentation from docstrings in the source code." name="description"/>
+<title>Module documentation | CNFT.me: How It Works 0.1 documentation</title>
+<link href="../../_static/pygments.css" rel="stylesheet"/>
+<link href="../../_static/theme.9297a650d9dd3016d913.css" rel="stylesheet"/>
+<link href="demo/auto/" rel="canonical"/>
+<link href="../../_static/favicon-32x32.png" rel="shortcut icon"/>
+<link href="../../search/" rel="search" title="Search"/>
+<link href="../code-blocks/" rel="next" title="Code blocks"/>
+<link href="../../how-to/update/" rel="prev" title="Update the theme"/>
+</head>
+<body class="antialiased text-gray scroll-smooth">
+<div class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto" data-action="keydown@window-&gt;search#focus " data-controller="sidebar search " id="page">
+<a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#module-documentation" title="Skip navigation links">Skip to content</a>
+<header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
+<div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
+<button class="xl:hidden h-14 w-14 leading-14 text-gray-100 hover:bg-gray-700 hover:text-brand focus:outline-none focus:bg-gray-700 focus:text-brand" data-action="sidebar#open" data-sidebar-target="hamburger">
+<span class="sr-only">Open navigation menu</span>
+<svg aria-hidden="true" class="fill-current h-8 w-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</button><a class="hover:bg-gray-700 focus:bg-gray-700 focus:outline-none" href="../../" title="Back to homepage"><img alt="Logo" class="h-14 w-14 p-3 inline-block" src="../../_static/cnft-me-logo.svg"/><span class="hidden lg:inline-block shrink-0 font-medium text-gray-100 mx-5 leading-14 tracking-wider">CNFT.me: How It Works 0.1 documentation</span>
+</a></div><div class="flex justify-end items-center flex-1"><form action="../../search/" class="flex print:hidden justify-between items-center leading-14 md:ml-4 bg-gray-dark text-gray-300 focus-within:bg-gray-50 focus-within:text-gray-800 focus-within:absolute focus-within:inset-x-0 focus-within:top-0 md:focus-within:w-full md:focus-within:static z-10" data-action="click-&gt;search#focusSearchInput" id="searchbox" method="get">
+<button aria-label="Get search results" class="text-inherit h-14 w-14" tabindex="-1">
+<svg aria-hidden="true" class="fill-current stroke-current h-8 w-8" stroke-width="0.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</button>
+<input aria-label="Search the docs" class="pr-2 bg-transparent text-inherit focus:outline-none w-0 md:w-auto focus:w-full transition-all duration-100" data-search-target="searchInput" id="search-input" name="q" placeholder="Search the docs" type="search"/>
+</form><div class="shrink-0">
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/">Docs</a>
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/about/">About</a>
+<a aria-label="Visit repository on GitHub" class="tooltipped tooltipped-sw h-14 inline-block text-gray-100 leading-14 hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand pl-2 pr-4 sm:px-4" href="https://github.com/kai687/sphinxawesome-theme"><svg fill="currentColor" style="height: 26px; margin-top: -2px;" viewbox="0 0 45 44" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.477.927C10.485.927.76 10.65.76 22.647c0 9.596 6.223 17.736 14.853 20.608 1.087.2 1.483-.47 1.483-1.047 0-.516-.019-1.881-.03-3.693-6.04 1.312-7.315-2.912-7.315-2.912-.988-2.51-2.412-3.178-2.412-3.178-1.972-1.346.149-1.32.149-1.32 2.18.154 3.327 2.24 3.327 2.24 1.937 3.318 5.084 2.36 6.321 1.803.197-1.403.759-2.36 1.379-2.903-4.823-.548-9.894-2.412-9.894-10.734 0-2.37.847-4.31 2.236-5.828-.224-.55-.969-2.759.214-5.748 0 0 1.822-.584 5.972 2.226 1.732-.482 3.59-.722 5.437-.732 1.845.01 3.703.25 5.437.732 4.147-2.81 5.967-2.226 5.967-2.226 1.185 2.99.44 5.198.217 5.748 1.392 1.517 2.232 3.457 2.232 5.828 0 8.344-5.078 10.18-9.916 10.717.779.67 1.474 1.996 1.474 4.021 0 2.904-.027 5.247-.027 5.96 0 .58.392 1.256 1.493 1.044C37.981 40.375 44.2 32.24 44.2 22.647c0-11.996-9.726-21.72-21.722-21.72" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+</div></div>
+</div>
+</header>
+<aside class="grid-area-sidebar h-full fixed pt-14 xl:relative inset-y-0 left-0 z-20 xl:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 xl:translate-x-0 xl:opacity-100" data-sidebar-target="sidebar">
+<nav class="h-full overflow-y-auto bg-white text-gray-600 pt-8 flex flex-col" role="navigation">
+<div class="nav-toc flex-1 pl-6"><p class="caption" role="heading"><span class="caption-text">How-To</span></p>
+<ul>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/">Install the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-as-a-python-package-recommended">Install the theme as a Python package (recommended)</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-from-a-local-directory">Install the theme from a local directory</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#set-up-a-development-environment">Set up a development environment</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#create-a-local-copy-of-the-repository">Create a local copy of the repository</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-python-dependencies">Install Python dependencies</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-javascript-dependencies">Install JavaScript dependencies</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/use/">Use the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/">Load the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-python-package">Load the theme from a Python package</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-local-directory">Load the theme from a local directory</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/">Configure the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#theme-options">Theme options</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#extension-options">Extension options</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/">Make your documentation awesome</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#use-headerlink-icons">Use headerlink icons</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-placeholder-text-in-code-blocks">Highlight placeholder text in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-code-changes">Highlight code changes</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#add-as-you-type-search-with-algolia-docsearch">Add as-you-type search with Algolia DocSearch</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/">Customize the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-or-override-styles">Add or override styles</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-css-custom-properties">Override CSS custom properties</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-additional-page-layouts">Add additional page layouts</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-page-layouts-globally">Override page layouts globally</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-per-page-layout">Override per-page layout</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/">Modify the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-the-templates">Modify the templates</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-css-files">Modify CSS files</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/">Update the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/#version-3-0">Version 3.0</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/#version-2-0">Version 2.0</a></div></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Demo</span></p>
+<ul class="current">
+<li class="toctree-l1 current expanded"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="current reference internal" data-action="click-&gt;sidebar#close" href="#">Module documentation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="#automodule-example">Automodule example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#package-structure">Package Structure</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.ApplicationError"><code class="docutils literal notranslate">ApplicationError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.Component"><code class="docutils literal notranslate">Component</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.DataError"><code class="docutils literal notranslate">DataError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.SettingsSpec"><code class="docutils literal notranslate">SettingsSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.TransformSpec"><code class="docutils literal notranslate">TransformSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.VersionInfo"><code class="docutils literal notranslate">VersionInfo</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="#autoclass-example">Autoclass example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.nodes.Node"><code class="docutils literal notranslate">Node</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="#autofunction-example">Autofunction example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#docutils.nodes.serial_escape"><code class="docutils literal notranslate">serial_escape()</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="#command-line-options">Command line options</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#option-directive">Option directive</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#option-lists">Option lists</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/">Code blocks</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#sphinx-code-block-directive">Sphinx code-block directive</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#add-captions-to-code-blocks">Add captions to code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#show-line-numbers-in-code-blocks">Show line numbers in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#highlight-lines-in-code-blocks">Highlight lines in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#highlight-changes-in-code-blocks">Highlight changes in code blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#docutils-code-directive">Docutils code directive</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#parsed-literal-blocks">Parsed literal blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/">On-page navigation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#section-1">Section 1</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-1-1">Subsection 1.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-1-2">Subsection 1.2</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#section-2">Section 2</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-2-1">Subsection 2.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-2-2">Subsection 2.2</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../figures/">Figures and tables</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../figures/#images">Images</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../figures/#figures">Figures</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../figures/#tables">Tables</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../footnotes/">Footnotes</a></div></li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/">Inline code</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#syntax-highlighting-in-inline-code">Syntax highlighting in inline code</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#more-interpreted-text-roles">More interpreted text roles</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#files-and-directories">Files and directories</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#inline-code-with-placeholder-text">Inline code with placeholder text</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#keyboard-input">Keyboard input</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#user-interface-elements">User interface elements</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/">Lists</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#unordered-lists">Unordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#ordered-lists">Ordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#definition-lists">Definition lists</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/">Notes, warnings, and quotations</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#tips">Tips</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#notes">Notes</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#cautions">Cautions</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#warnings">Warnings</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#block-quotations">Block quotations</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/">Headings and text</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#inline-markup">Inline markup</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#level-2-heading">Level 2 heading</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#level-3-heading">Level 3 heading</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<button class="text-4xl text-gray-800 p-4 bottom-0 hover:text-brand xl:hidden focus:text-brand self-center" data-action="sidebar#close" title="Close navigation menu">
+<span class="sr-only">Close navigation menu</span>
+<svg aria-hidden="true" class="fill-current stroke-current h-6 w-6" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</aside>
+<main class="px-4 pt-14 xl:ml-fluid grid-area-main overflow-y-auto flex flex-col flex-1 h-full mx-0 md:mx-auto xl:mr-0"><nav aria-label="breadcrumbs" class="print:hidden mt-12 text-sm text-gray-light" role="navigation">
+<a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="../../">CNFT.me: How It Works 0.1 documentation</a>
+<span class="mr-1">/</span><span aria-current="page">Module documentation</span>
+</nav>
+<article class="flex-1" role="main">
+<section id="module-documentation">
+<h1>Module documentation<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#module-documentation"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h1>
+<p class="lead">See how automatically generated documentation from Python source code
+looks like with the Awesome Theme.</p>
+<section id="automodule-example">
+<h2>Automodule example<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#automodule-example"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<span class="target" id="module-docutils"></span><p>This is the Docutils (Python Documentation Utilities) package.</p>
+<section id="package-structure">
+<h3>Package Structure<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#package-structure"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>Modules:</p>
+<ul class="simple">
+<li><p>__init__.py: Contains component base classes, exception classes, and
+Docutils version information.</p></li>
+<li><p>core.py: Contains the <code class="docutils literal notranslate">Publisher</code> class and <code class="docutils literal notranslate">publish_*()</code> convenience
+functions.</p></li>
+<li><p>frontend.py: Runtime settings (command-line interface, configuration files)
+processing, for Docutils front-ends.</p></li>
+<li><p>io.py: Provides a uniform API for low-level input and output.</p></li>
+<li><p>nodes.py: Docutils document tree (doctree) node class library.</p></li>
+<li><p>statemachine.py: A finite state machine specialized for
+regular-expression-based text filters.</p></li>
+</ul>
+<p>Subpackages:</p>
+<ul>
+<li><p>languages: Language-specific mappings of terms.</p></li>
+<li><p>parsers: Syntax-specific input parser modules or packages.</p></li>
+<li><p>readers: Context-specific input handlers which understand the data
+source and manage a parser.</p></li>
+<li><p>transforms: Modules used by readers and writers to modify
+the Docutils document tree.</p></li>
+<li><p>utils: Contains the <code class="docutils literal notranslate">Reporter</code> system warning class and miscellaneous
+utilities used by readers, writers, and transforms.</p>
+<p>utils/urischemes.py: Contains a complete mapping of known URI addressing
+scheme names to descriptions.</p>
+</li>
+<li><p>utils/math: Contains functions for conversion of mathematical notation
+between different formats (LaTeX, MathML, text, …).</p></li>
+<li><p>writers: Format-specific output translators.</p></li>
+</ul>
+</section>
+<dl class="py exception code-definition">
+<dt class="sig sig-object py" id="docutils.ApplicationError">
+<em class="property">exception<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">ApplicationError</code><a class="reference internal" href="../../_modules/docutils/#ApplicationError"><span class="viewcode-link">[source]</span></a><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.ApplicationError"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd>
+</dd></dl>
+<dl class="py class code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.Component">
+<em class="property">class<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">Component</code><a class="reference internal" href="../../_modules/docutils/#Component"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.Component"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Base class for Docutils components.</p>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.Component.component_type">
+<code class="sig-name descname">component_type</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>None</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.Component.component_type"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Name of the component type (‘reader’, ‘parser’, ‘writer’).  Override in
+subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.Component.supported">
+<code class="sig-name descname">supported</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>()</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.Component.supported"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Name and aliases for this component.  Override in subclasses.</p>
+</dd></dl>
+<dl class="py method code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.Component.supports">
+<code class="sig-name descname">supports</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">format</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/docutils/#Component.supports"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.Component.supports"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Is <code class="docutils literal notranslate">format</code> supported by this component?</p>
+<p>To be used by transforms to ask the dependent component if it supports
+a certain input context or output format.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py exception code-definition">
+<dt class="sig sig-object py" id="docutils.DataError">
+<em class="property">exception<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">DataError</code><a class="reference internal" href="../../_modules/docutils/#DataError"><span class="viewcode-link">[source]</span></a><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.DataError"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd>
+</dd></dl>
+<dl class="py class code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec">
+<em class="property">class<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">SettingsSpec</code><a class="reference internal" href="../../_modules/docutils/#SettingsSpec"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Runtime setting specification base class.</p>
+<p>SettingsSpec subclass objects used by <code class="docutils literal notranslate">docutils.frontend.OptionParser</code>.</p>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.config_section">
+<code class="sig-name descname">config_section</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>None</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.config_section"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>The name of the config file section specific to this component
+(lowercase, no brackets).  Override in subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.config_section_dependencies">
+<code class="sig-name descname">config_section_dependencies</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>None</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.config_section_dependencies"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>A list of names of config file sections that are to be applied before
+<code class="docutils literal notranslate">config_section</code>, in order (from general to specific).  In other words,
+the settings in <code class="docutils literal notranslate">config_section</code> are to be overlaid on top of the settings
+from these sections.  The “general” section is assumed implicitly.
+Override in subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.relative_path_settings">
+<code class="sig-name descname">relative_path_settings</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>()</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.relative_path_settings"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Settings containing filesystem paths.  Override in subclasses.
+Settings listed here are to be interpreted relative to the current working
+directory.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.settings_default_overrides">
+<code class="sig-name descname">settings_default_overrides</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>None</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.settings_default_overrides"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>A dictionary of auxiliary defaults, to override defaults for settings
+defined in other components’ <code class="docutils literal notranslate">setting_specs</code>.  Override in subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.settings_defaults">
+<code class="sig-name descname">settings_defaults</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>None</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.settings_defaults"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>A dictionary of defaults for settings not in <code class="docutils literal notranslate">settings_spec</code> (internal
+settings, intended to be inaccessible by command-line and config file).
+Override in subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.SettingsSpec.settings_spec">
+<code class="sig-name descname">settings_spec</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>()</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.SettingsSpec.settings_spec"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Runtime settings specification.  Override in subclasses.</p>
+<p>Defines runtime settings and associated command-line options, as used by
+<code class="docutils literal notranslate">docutils.frontend.OptionParser</code>.  This is a tuple of:</p>
+<ul>
+<li><p>Option group title (string or <code class="docutils literal notranslate">None</code> which implies no group, just a list
+of single options).</p></li>
+<li><p>Description (string or <code class="docutils literal notranslate">None</code>).</p></li>
+<li><p>A sequence of option tuples.  Each consists of:</p>
+<ul>
+<li><p>Help text (string)</p></li>
+<li><p>List of option strings (e.g. <code class="docutils literal notranslate">['-Q', '--quux']</code>).</p></li>
+<li><p>Dictionary of keyword arguments sent to the OptionParser/OptionGroup
+<code class="docutils literal notranslate">add_option</code> method.</p>
+<p>Runtime setting names are derived implicitly from long option names
+(’–a-setting’ becomes <code class="docutils literal notranslate">settings.a_setting</code>) or explicitly from the
+‘dest’ keyword argument.</p>
+<p>Most settings will also have a ‘validator’ keyword &amp; function.  The
+validator function validates setting values (from configuration files
+and command-line option arguments) and converts them to appropriate
+types.  For example, the <code class="docutils literal notranslate">docutils.frontend.validate_boolean</code>
+function, <strong>required by all boolean settings</strong>, converts true values
+(‘1’, ‘on’, ‘yes’, and ‘true’) to 1 and false values (‘0’, ‘off’,
+‘no’, ‘false’, and ‘’) to 0.  Validators need only be set once per
+setting.  See the <code class="docutils literal notranslate">docutils.frontend.validate_*</code> functions.</p>
+<p>See the optparse docs for more details.</p>
+</li>
+</ul>
+</li>
+<li><p>More triples of group title, description, options, as many times as
+needed.  Thus, <code class="docutils literal notranslate">settings_spec</code> tuples can be simply concatenated.</p></li>
+</ul>
+</dd></dl>
+</dd></dl>
+<dl class="py class code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.TransformSpec">
+<em class="property">class<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">TransformSpec</code><a class="reference internal" href="../../_modules/docutils/#TransformSpec"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.TransformSpec"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Runtime transform specification base class.</p>
+<p>TransformSpec subclass objects used by <code class="docutils literal notranslate">docutils.transforms.Transformer</code>.</p>
+<dl class="py method code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.TransformSpec.get_transforms">
+<code class="sig-name descname">get_transforms</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/docutils/#TransformSpec.get_transforms"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.TransformSpec.get_transforms"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Transforms required by this class.  Override in subclasses.</p>
+</dd></dl>
+<dl class="py attribute code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.TransformSpec.unknown_reference_resolvers">
+<code class="sig-name descname">unknown_reference_resolvers</code><em class="property"><span class="w"> </span><span class="p">=</span><span class="w"> </span>()</em><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.TransformSpec.unknown_reference_resolvers"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>List of functions to try to resolve unknown references.  Unknown
+references have a ‘refname’ attribute which doesn’t correspond to any
+target in the document.  Called when the transforms in
+<code class="docutils literal notranslate">docutils.transforms.references</code> are unable to find a correct target.  The
+list should contain functions which will try to resolve unknown
+references, with the following signature:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">default</span></div>
+<div class="highlight"><pre><code><span class="k">def</span> <span class="nf">reference_resolver</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+    <span class="sd">'''Returns boolean: true if resolved, false if not.'''</span>
+</code></pre></div></div>
+<p>If the function is able to resolve the reference, it should also remove
+the ‘refname’ attribute and mark the node as resolved:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">default</span></div>
+<div class="highlight"><pre><code><span class="k">del</span> <span class="n">node</span><span class="p">[</span><span class="s1">'refname'</span><span class="p">]</span>
+<span class="n">node</span><span class="o">.</span><span class="n">resolved</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></div>
+<p>Each function must have a “priority” attribute which will affect the order
+the unknown_reference_resolvers are run:</p>
+<div class="code-wrapper" data-controller="code">
+<div class="code-header">
+<span class="code-lang">default</span></div>
+<div class="highlight"><pre><code><span class="n">reference_resolver</span><span class="o">.</span><span class="n">priority</span> <span class="o">=</span> <span class="mi">100</span>
+</code></pre></div></div>
+<p>Override in subclasses.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class code-definition">
+<dt class="sig sig-object py" id="docutils.VersionInfo">
+<em class="property">class<span class="w"> </span></em><code class="sig-prename descclassname">docutils.</code><code class="sig-name descname">VersionInfo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">major</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">minor</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">micro</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">releaselevel</span><span class="o">=</span><span class="default_value">'final'</span></em>, <em class="sig-param"><span class="n">serial</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">release</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/docutils/#VersionInfo"><span class="viewcode-link">[source]</span></a><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.VersionInfo"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd>
+</dd></dl>
+</section>
+<section id="autoclass-example">
+<h2>Autoclass example<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#autoclass-example"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<dl class="py class code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.nodes.Node">
+<em class="property">class<span class="w"> </span></em><code class="sig-prename descclassname">docutils.nodes.</code><code class="sig-name descname">Node</code><a class="reference internal" href="../../_modules/docutils/nodes/#Node"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.nodes.Node"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Abstract base class of nodes in a document tree.</p>
+<dl class="py method code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.nodes.Node.walk">
+<code class="sig-name descname">walk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">visitor</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/docutils/nodes/#Node.walk"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.nodes.Node.walk"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Traverse a tree of <code class="docutils literal notranslate">Node</code> objects, calling the
+<code class="docutils literal notranslate">dispatch_visit()</code> method of <code class="docutils literal notranslate">visitor</code> when entering each
+node.  (The <code class="docutils literal notranslate">walkabout()</code> method is similar, except it also
+calls the <code class="docutils literal notranslate">dispatch_departure()</code> method before exiting each
+node.)</p>
+<p>This tree traversal supports limited in-place tree
+modifications.  Replacing one node with one or more nodes is
+OK, as is removing an element.  However, if the node removed
+or replaced occurs after the current node, the old node will
+still be traversed, and any new nodes will not.</p>
+<p>Within <code class="docutils literal notranslate">visit</code> methods (and <code class="docutils literal notranslate">depart</code> methods for
+<code class="docutils literal notranslate">walkabout()</code>), <code class="docutils literal notranslate">TreePruningException</code> subclasses may be raised
+(<code class="docutils literal notranslate">SkipChildren</code>, <code class="docutils literal notranslate">SkipSiblings</code>, <code class="docutils literal notranslate">SkipNode</code>, <code class="docutils literal notranslate">SkipDeparture</code>).</p>
+<p>Parameter <code class="docutils literal notranslate">visitor</code>: A <code class="docutils literal notranslate">NodeVisitor</code> object, containing a
+<code class="docutils literal notranslate">visit</code> implementation for each <code class="docutils literal notranslate">Node</code> subclass encountered.</p>
+<p>Return true if we should stop the traversal.</p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="autofunction-example">
+<h2>Autofunction example<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#autofunction-example"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<dl class="py function code-definition">
+<dt class="sig sig-object py accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="docutils.nodes.serial_escape">
+<code class="sig-prename descclassname">docutils.nodes.</code><code class="sig-name descname">serial_escape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/docutils/nodes/#serial_escape"><span class="viewcode-link">[source]</span></a><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#docutils.nodes.serial_escape"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Escape string values that are elements of a list, for serialization.</p>
+</dd></dl>
+</section>
+<section id="command-line-options">
+<h2>Command line options<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#command-line-options"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>If you want to document command-line options, you have two choices:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate">option</code> directive (Sphinx)</p></li>
+<li><p>An option list (docutils)</p></li>
+</ul>
+<section id="option-directive">
+<h3>Option directive<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#option-directive"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>Sphinx comes with the <code class="docutils literal notranslate">option</code> directive. This renders every option
+into its own element, including permalinks:</p>
+<dl class="std option code-definition">
+<dt class="sig sig-object std accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="cmdoption-h">
+<span id="cmdoption-help"></span><code class="sig-name descname">-h</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--help</code><code class="sig-prename descclassname"></code><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#cmdoption-h"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Display a (hopefully) useful message.</p>
+</dd></dl>
+<dl class="std option code-definition">
+<dt class="sig sig-object std accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="cmdoption-i">
+<span id="cmdoption-input"></span><code class="sig-name descname">-i</code><code class="sig-prename descclassname"> FILE</code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--input</code><code class="sig-prename descclassname"> FILE</code><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#cmdoption-i"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Specify an input file.</p>
+</dd></dl>
+<dl class="std option code-definition">
+<dt class="sig sig-object std accordion" data-action="click-&gt;collapsible#expandAccordion" data-controller="collapsible" id="cmdoption-v">
+<span id="cmdoption-verbose"></span><code class="sig-name descname">-v</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--verbose</code><code class="sig-prename descclassname"></code><button aria-expanded="false" aria-label="Expand this section" class="expand-more tooltipped tooltipped-nw" data-action="collapsible#expandMore"><svg aria-hidden="true" pointer-events="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#cmdoption-v"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></dt>
+<dd class="panel">
+<p>Increase the verbosity.</p>
+</dd></dl>
+</section>
+<section id="option-lists">
+<h3>Option lists<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#option-lists"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>A compact way to display command-line options is built into the <code class="docutils literal notranslate">docutils</code> module and works in Sphinx too:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>Display a helpful message.</p>
+</dd>
+<dt><kbd><span class="option">-i <var>FILE</var></span>, <span class="option">--input <var>FILE</var></span></kbd></dt>
+<dd><p>Specify an input file.</p>
+</dd>
+<dt><kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></dt>
+<dd><p>Increase the verbosity.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+</article><section class="flex justify-between pt-4 mt-12">
+<div class="mr-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2">Previous</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../../how-to/update/" title="Go to previous page">Update the theme</a>
+</div>
+<div class="ml-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2 text-right">Next</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../code-blocks/" title="Go to next page">Code blocks</a>
+</div>
+</section>
+<footer>
+<div class="mt-20 mb-4 text-sm text-gray-700 print:mt-4">© 2022, Allan Hart Made with <a href="https://www.sphinx-doc.org">Sphinx 5.3.0</a></div>
+</footer></main>
+<button class="fixed bottom-0 right-0 z-20 opacity-0 p-4 m-4 tracking-wide bg-gray-900 text-gray-100 transition transform transform-gpu duration-500 translate-y-full" data-action="search#hideSnackbar" data-search-target="snackbar">
+  Clear highlights
+</button><div class="fixed hidden inset-0 bg-black bg-opacity-50" data-action="click-&gt;sidebar#close" data-sidebar-target="screen">
+</div>
+</div>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/sphinx_highlight.js"></script>
+<script src="../../_static/theme.3051a0ec24cad00d4d88.js"></script>
+</body>
+</html>

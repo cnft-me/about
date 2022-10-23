@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="Docutils 0.19: https://docutils.sourceforge.io/" name="generator"/>
+<meta content="Discover how the theme styles figures, images, and their supporting elements, such as captions." name="description"/>
+<title>Figures and tables | CNFT.me: How It Works 0.1 documentation</title>
+<link href="../../_static/pygments.css" rel="stylesheet"/>
+<link href="../../_static/theme.9297a650d9dd3016d913.css" rel="stylesheet"/>
+<link href="demo/figures/" rel="canonical"/>
+<link href="../../_static/favicon-32x32.png" rel="shortcut icon"/>
+<link href="../../search/" rel="search" title="Search"/>
+<link href="../footnotes/" rel="next" title="Footnotes"/>
+<link href="../contents/" rel="prev" title="On-page navigation"/>
+</head>
+<body class="antialiased text-gray scroll-smooth">
+<div class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto" data-action="keydown@window-&gt;search#focus " data-controller="sidebar search " id="page">
+<a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#figures-and-tables" title="Skip navigation links">Skip to content</a>
+<header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
+<div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
+<button class="xl:hidden h-14 w-14 leading-14 text-gray-100 hover:bg-gray-700 hover:text-brand focus:outline-none focus:bg-gray-700 focus:text-brand" data-action="sidebar#open" data-sidebar-target="hamburger">
+<span class="sr-only">Open navigation menu</span>
+<svg aria-hidden="true" class="fill-current h-8 w-8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</button><a class="hover:bg-gray-700 focus:bg-gray-700 focus:outline-none" href="../../" title="Back to homepage"><img alt="Logo" class="h-14 w-14 p-3 inline-block" src="../../_static/cnft-me-logo.svg"/><span class="hidden lg:inline-block shrink-0 font-medium text-gray-100 mx-5 leading-14 tracking-wider">CNFT.me: How It Works 0.1 documentation</span>
+</a></div><div class="flex justify-end items-center flex-1"><form action="../../search/" class="flex print:hidden justify-between items-center leading-14 md:ml-4 bg-gray-dark text-gray-300 focus-within:bg-gray-50 focus-within:text-gray-800 focus-within:absolute focus-within:inset-x-0 focus-within:top-0 md:focus-within:w-full md:focus-within:static z-10" data-action="click-&gt;search#focusSearchInput" id="searchbox" method="get">
+<button aria-label="Get search results" class="text-inherit h-14 w-14" tabindex="-1">
+<svg aria-hidden="true" class="fill-current stroke-current h-8 w-8" stroke-width="0.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</button>
+<input aria-label="Search the docs" class="pr-2 bg-transparent text-inherit focus:outline-none w-0 md:w-auto focus:w-full transition-all duration-100" data-search-target="searchInput" id="search-input" name="q" placeholder="Search the docs" type="search"/>
+</form><div class="shrink-0">
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/">Docs</a>
+<a class="h-14 inline-block leading-14 text-gray-100 bg-transparent tracking-wide font-medium hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand px-2 sm:px-4" href="/about/">About</a>
+<a aria-label="Visit repository on GitHub" class="tooltipped tooltipped-sw h-14 inline-block text-gray-100 leading-14 hover:text-brand focus:bg-gray-700 focus:outline-none hover:no-underline focus:text-brand pl-2 pr-4 sm:px-4" href="https://github.com/kai687/sphinxawesome-theme"><svg fill="currentColor" style="height: 26px; margin-top: -2px;" viewbox="0 0 45 44" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.477.927C10.485.927.76 10.65.76 22.647c0 9.596 6.223 17.736 14.853 20.608 1.087.2 1.483-.47 1.483-1.047 0-.516-.019-1.881-.03-3.693-6.04 1.312-7.315-2.912-7.315-2.912-.988-2.51-2.412-3.178-2.412-3.178-1.972-1.346.149-1.32.149-1.32 2.18.154 3.327 2.24 3.327 2.24 1.937 3.318 5.084 2.36 6.321 1.803.197-1.403.759-2.36 1.379-2.903-4.823-.548-9.894-2.412-9.894-10.734 0-2.37.847-4.31 2.236-5.828-.224-.55-.969-2.759.214-5.748 0 0 1.822-.584 5.972 2.226 1.732-.482 3.59-.722 5.437-.732 1.845.01 3.703.25 5.437.732 4.147-2.81 5.967-2.226 5.967-2.226 1.185 2.99.44 5.198.217 5.748 1.392 1.517 2.232 3.457 2.232 5.828 0 8.344-5.078 10.18-9.916 10.717.779.67 1.474 1.996 1.474 4.021 0 2.904-.027 5.247-.027 5.96 0 .58.392 1.256 1.493 1.044C37.981 40.375 44.2 32.24 44.2 22.647c0-11.996-9.726-21.72-21.722-21.72" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+</div></div>
+</div>
+</header>
+<aside class="grid-area-sidebar h-full fixed pt-14 xl:relative inset-y-0 left-0 z-20 xl:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 xl:translate-x-0 xl:opacity-100" data-sidebar-target="sidebar">
+<nav class="h-full overflow-y-auto bg-white text-gray-600 pt-8 flex flex-col" role="navigation">
+<div class="nav-toc flex-1 pl-6"><p class="caption" role="heading"><span class="caption-text">How-To</span></p>
+<ul>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/">Install the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-as-a-python-package-recommended">Install the theme as a Python package (recommended)</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-the-theme-from-a-local-directory">Install the theme from a local directory</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#set-up-a-development-environment">Set up a development environment</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#create-a-local-copy-of-the-repository">Create a local copy of the repository</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-python-dependencies">Install Python dependencies</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/install/#install-javascript-dependencies">Install JavaScript dependencies</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/use/">Use the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/">Load the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-python-package">Load the theme from a Python package</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/load/#load-the-theme-from-a-local-directory">Load the theme from a local directory</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/">Configure the theme</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#theme-options">Theme options</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/options/#extension-options">Extension options</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/">Make your documentation awesome</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#use-headerlink-icons">Use headerlink icons</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-placeholder-text-in-code-blocks">Highlight placeholder text in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#highlight-code-changes">Highlight code changes</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/using/#add-as-you-type-search-with-algolia-docsearch">Add as-you-type search with Algolia DocSearch</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/">Customize the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-or-override-styles">Add or override styles</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-css-custom-properties">Override CSS custom properties</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#add-additional-page-layouts">Add additional page layouts</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-page-layouts-globally">Override page layouts globally</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/customize/#override-per-page-layout">Override per-page layout</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/">Modify the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-the-templates">Modify the templates</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/modify/#modify-css-files">Modify CSS files</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/">Update the theme</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/#version-3-0">Version 3.0</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../../how-to/update/#version-2-0">Version 2.0</a></div></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Demo</span></p>
+<ul class="current">
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/">Module documentation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#automodule-example">Automodule example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#package-structure">Package Structure</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.ApplicationError"><code class="docutils literal notranslate">ApplicationError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.Component"><code class="docutils literal notranslate">Component</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.DataError"><code class="docutils literal notranslate">DataError</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.SettingsSpec"><code class="docutils literal notranslate">SettingsSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.TransformSpec"><code class="docutils literal notranslate">TransformSpec</code></a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.VersionInfo"><code class="docutils literal notranslate">VersionInfo</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#autoclass-example">Autoclass example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.nodes.Node"><code class="docutils literal notranslate">Node</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#autofunction-example">Autofunction example</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#docutils.nodes.serial_escape"><code class="docutils literal notranslate">serial_escape()</code></a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#command-line-options">Command line options</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#option-directive">Option directive</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../auto/#option-lists">Option lists</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/">Code blocks</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#sphinx-code-block-directive">Sphinx code-block directive</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#add-captions-to-code-blocks">Add captions to code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#show-line-numbers-in-code-blocks">Show line numbers in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#highlight-lines-in-code-blocks">Highlight lines in code blocks</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#highlight-changes-in-code-blocks">Highlight changes in code blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#docutils-code-directive">Docutils code directive</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../code-blocks/#parsed-literal-blocks">Parsed literal blocks</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/">On-page navigation</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#section-1">Section 1</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-1-1">Subsection 1.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-1-2">Subsection 1.2</a></div></li>
+</ul>
+</li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#section-2">Section 2</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-2-1">Subsection 2.1</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../contents/#subsection-2-2">Subsection 2.2</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current expanded"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="current reference internal" data-action="click-&gt;sidebar#close" href="#">Figures and tables</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#images">Images</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#figures">Figures</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="#tables">Tables</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../footnotes/">Footnotes</a></div></li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/">Inline code</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#syntax-highlighting-in-inline-code">Syntax highlighting in inline code</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#more-interpreted-text-roles">More interpreted text roles</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#files-and-directories">Files and directories</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#inline-code-with-placeholder-text">Inline code with placeholder text</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#keyboard-input">Keyboard input</a></div></li>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../inline-code/#user-interface-elements">User interface elements</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/">Lists</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#unordered-lists">Unordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#ordered-lists">Ordered lists</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../lists/#definition-lists">Definition lists</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/">Notes, warnings, and quotations</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#tips">Tips</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#notes">Notes</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#cautions">Cautions</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#warnings">Warnings</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../notes/#block-quotations">Block quotations</a></div></li>
+</ul>
+</li>
+<li class="toctree-l1"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/">Headings and text</a></div><ul>
+<li class="toctree-l2"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#inline-markup">Inline markup</a></div></li>
+<li class="toctree-l2"><div class="nav-link"><svg class="expand" data-action="click-&gt;sidebar#expand keydown-&gt;sidebar#expandKeyPressed" tabindex="0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#level-2-heading">Level 2 heading</a></div><ul>
+<li class="toctree-l3"><div class="nav-link"><a class="reference internal" data-action="click-&gt;sidebar#close" href="../text/#level-3-heading">Level 3 heading</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<button class="text-4xl text-gray-800 p-4 bottom-0 hover:text-brand xl:hidden focus:text-brand self-center" data-action="sidebar#close" title="Close navigation menu">
+<span class="sr-only">Close navigation menu</span>
+<svg aria-hidden="true" class="fill-current stroke-current h-6 w-6" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</aside>
+<main class="px-4 pt-14 xl:ml-fluid grid-area-main overflow-y-auto flex flex-col flex-1 h-full mx-0 md:mx-auto xl:mr-0"><nav aria-label="breadcrumbs" class="print:hidden mt-12 text-sm text-gray-light" role="navigation">
+<a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="../../">CNFT.me: How It Works 0.1 documentation</a>
+<span class="mr-1">/</span><span aria-current="page">Figures and tables</span>
+</nav>
+<article class="flex-1" role="main">
+<section id="figures-and-tables">
+<h1>Figures and tables<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#figures-and-tables"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h1>
+<p class="lead">See how images, figures, and tables look like with the Awesome Theme.
+Sphinx distinguishes between <em>images</em> and <em>figures</em>.</p>
+<hr class="docutils"/>
+<section id="images">
+<h2>Images<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#images"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>For images without captions or legends, use the <code class="docutils literal notranslate">image</code> directive.</p>
+<img alt="A placeholder image" src="../../_images/image.svg"/><p>Use the <code class="docutils literal notranslate">:align: center</code> option to center an image.</p>
+<a class="reference internal image-reference" href="../../_images/image.svg"><img alt="A centered placeholder image" class="align-center" src="../../_images/image.svg" width="50%"/></a>
+<p>Use <code class="docutils literal notranslate">:align: right</code> option to align the image to the right edge.</p>
+<a class="reference internal image-reference" href="../../_images/image.svg"><img alt="A right-aligned placeholder image" class="align-right" src="../../_images/image.svg" width="50%"/></a>
+</section>
+<section id="figures">
+<h2>Figures<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#figures"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>If you want to add captions and legends to the image, use the <code class="docutils literal notranslate">figure</code> directive.</p>
+<figure class="align-default" id="id1">
+<img alt="A grey placeholder image" src="../../_images/image.svg"/><figcaption><span class="caption-text">This is an image caption.</span><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#id1"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+<div class="legend">
+<p>You can also provide a legend to the figure with the <code class="docutils literal notranslate">:legend:</code> option.
+The images on this page are from <a class="reference external" href="https://undraw.co/" rel="nofollow noopener">https://undraw.co/<svg aria-hidden="true" class="external-link-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>.</p>
+</div>
+</figcaption>
+</figure>
+<p>You can control the image alignment by using the <code class="docutils literal notranslate">:align:</code> option.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/image.svg"><img alt="A centered placeholder image in figure environment" src="../../_images/image.svg" width="50%"/></a>
+<figcaption><span class="caption-text">Use <code class="docutils literal notranslate">:align: center</code> to center a figure.</span><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#id2"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+</figcaption>
+</figure>
+<figure class="align-right" id="id3">
+<a class="reference internal image-reference" href="../../_images/image.svg"><img alt="A right-aligned placeholder image in figure environment" src="../../_images/image.svg" width="50%"/></a>
+<figcaption><span class="caption-text">Use <code class="docutils literal notranslate">:align: right</code> to right-align a figure.</span><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#id3"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+</figcaption>
+</figure>
+</section>
+<section id="tables">
+<h2>Tables<a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#tables"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>This is a small table.</p>
+<table class="docutils align-default" id="id4" style="width: 100%">
+<caption><span class="caption-text">Table caption</span><a aria-label="Click to copy this link" class="headerlink tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne tooltipped tooltipped-ne" data-action="click-&gt;clipboard#copyHeaderLink" data-controller="clipboard" href="#id4"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>table head</p></th>
+<th class="head"><p>table head</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>column</p></td>
+<td><p>column</p></td>
+</tr>
+<tr class="row-odd"><td><p>column</p></td>
+<td><p>column</p></td>
+</tr>
+<tr class="row-even"><td><p>column</p></td>
+<td><p>column</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</article><section class="flex justify-between pt-4 mt-12">
+<div class="mr-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2">Previous</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../contents/" title="Go to previous page">On-page navigation</a>
+</div>
+<div class="ml-auto">
+<span class="uppercase text-xs text-gray-light tracking-wider block mb-2 text-right">Next</span>
+<a class="block text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="../footnotes/" title="Go to next page">Footnotes</a>
+</div>
+</section>
+<footer>
+<div class="mt-20 mb-4 text-sm text-gray-700 print:mt-4">© 2022, Allan Hart Made with <a href="https://www.sphinx-doc.org">Sphinx 5.3.0</a></div>
+</footer></main>
+<button class="fixed bottom-0 right-0 z-20 opacity-0 p-4 m-4 tracking-wide bg-gray-900 text-gray-100 transition transform transform-gpu duration-500 translate-y-full" data-action="search#hideSnackbar" data-search-target="snackbar">
+  Clear highlights
+</button><div class="fixed hidden inset-0 bg-black bg-opacity-50" data-action="click-&gt;sidebar#close" data-sidebar-target="screen">
+</div>
+</div>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/sphinx_highlight.js"></script>
+<script src="../../_static/theme.3051a0ec24cad00d4d88.js"></script>
+</body>
+</html>
